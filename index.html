@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+<link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Rakkas&display=swap" rel="stylesheet">
+
+<title>Gioco del Tris</title>
+</head>
+
+<body>
+<div class="centro">
+
+<h1>Il gioco del Tris</h1>
+
+<div class="regole">
+	<p>regole di gioco:</p>
+</div>
+
+<div class="descrizione">
+<p>
+vince il giocatore che riesce a disporre tre dei propri simboli in linea retta orizzontale, verticale o diagonale. Se la griglia viene riempita senza che nessuno dei giocatori sia riuscito a completare una linea retta di tre simboli, il gioco finisce in parità.
+</p>
+</div>
+
+<div class="sottotitolo">
+	<p>clicca per inizare a giocare</p>
+</div>
+
+<div class="trisGrid">
+<div class="row">
+<div class="col">
+<a href="#" data-row="0" data-col="0" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="0" data-col="1" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="0" data-col="2" class="gridBtn"></a>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<a href="#" data-row="1" data-col="0" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="1" data-col="1" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="1" data-col="2" class="gridBtn"></a>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<a href="#" data-row="2" data-col="0" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="2" data-col="1" class="gridBtn"></a>
+</div>
+<div class="col">
+<a href="#" data-row="2" data-col="2" class="gridBtn"></a>
+</div>
+</div>
+</div>
+</div>
+
+<button id="reset">Inizia nuova partita</button>
+
+<script type="text/javascript" src="static/js/script.js"></script>
+
+</body>
+</html>
