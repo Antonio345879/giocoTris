@@ -21,7 +21,7 @@ mix-blend-mode: normal;
 .sottotitolo{
 margin-left: auto;
 margin-right: auto;
-color: green;
+color: #8f00ff;
 font-family: 'Fira Mono';
 font-size: 20px;
 margin-top: -50px;
@@ -30,7 +30,7 @@ margin-top: -50px;
 .regole{
 margin-left: auto;
 margin-right: auto;
-color: green;
+color: #8f00ff;
 font-family: 'Fira Mono';
 font-size: 20px;
 margin-bottom: 5px;
@@ -78,7 +78,7 @@ background-color: yellow;
 font-size: 18px;
 font-weight: 600;
 cursor: pointer;
-margin-left: 150px;
+margin-left: 620px;
 margin-top: 10px;
 
 }

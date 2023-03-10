@@ -46,9 +46,11 @@ for (let i = 0; i < links.length; i++) {
     })
 }
 
+
 reset.addEventListener("click", function(event) {
     window.location.reload()
 })
+
 
 function getEmptyCells(grid){
         let emptyCells = []
@@ -60,7 +62,13 @@ function getEmptyCells(grid){
                } 
             }
         }
+        return emptyCells
     }
+
+
+function getBestMove(grid, currentPlayer){
+    let emptyCells = getEmptyCells(board)
+}
 
   
     
