@@ -53,23 +53,34 @@ reset.addEventListener("click", function(event) {
 
 
 function getEmptyCells(grid){
-        let emptyCells = []
-        for (i = 0; i = 2; i ++){
-            for (j = 0; j = 2; j ++){
-               if(grid[i][j] === null){
-                let empty = [i][j]
-                emptyCells.push(empty)
+        let celle = []
+        for (i = 0; i < grid.length; i ++){
+            let riga = grid[i]
+            for (j = 0; j < riga.length; j ++){
+               if(riga[j] === null){
+                let cella = [i, j]
+                celle.push(cella)
                } 
             }
         }
-        return emptyCells
+        return celle
     }
 
 
 function getBestMove(grid, currentPlayer){
-    let emptyCells = getEmptyCells(board)
+    let mosse = getEmptyCells(board)
+    if(currentPlayer === "X"){
+        return emptyCells[0]
+    }else{
+        return mosse.pop()
+    }
 }
+let mossaX = getBestMove(grid, "X")
+let riga = mossaX[0]
+let colonna = mossaX[1]
+
+grid[riga][colonna] = "X"
 
   
-    
+    console.log(getBestMove())
     
